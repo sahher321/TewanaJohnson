@@ -125,7 +125,7 @@ export default function Hero() {
             </div>
 
             {/* Right Floating Card: Fiverr Badge */}
-            <div className="absolute bottom-4 -right-4 md:bottom-32 md:-right-16 transition-all ">
+            <div className="absolute -bottom-18 -right-10 md:bottom-32 md:-right-16 transition-all ">
               <Image
                 src="/assets/fiverIcon.svg"
                 alt="Fiverr"

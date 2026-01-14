@@ -28,7 +28,7 @@ export default function Portfolio() {
                         <motion.span
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
-                            className="text-[#1DBF73] font-semibold tracking-[2px] text-base uppercase mb-4 block"
+                            className="text-[#1DBF73] font-semibold tracking-[2px] text-base uppercase block"
                         >
                             Portfolio
                         </motion.span>

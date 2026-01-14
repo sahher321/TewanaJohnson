@@ -60,7 +60,7 @@ export default function About() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-[#1DBF73] font-semibold tracking-[2px] text-base uppercase mb-4 block"
+              className="text-[#1DBF73] font-semibold tracking-[2px] text-base uppercase block"
             >
               About Us
             </motion.span>

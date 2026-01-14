@@ -18,15 +18,23 @@ export default function Footer() {
                     />
                 </div>
 
-                {/* Contact Badge */}
-                <div className="relative w-full  h-32 md:h-48">
+                {/* Floating Contact Badge */}
+                <a
+                    href="https://www.fiverr.com/tewana_j"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="fixed bottom-2 -right-10 z-50 w-64 md:w-80 lg:w-[400px] transition-transform hover:scale-105 active:scale-95"
+                >
                     <Image
                         src="/assets/ResponseTime.png"
                         alt="Response Time"
-                        fill
-                        className="object-contain"
+                        width={500}
+                        height={200}
+                        priority
+                        quality={100}
+                        className="object-contain drop-shadow-lg"
                     />
-                </div>
+                </a>
             </div>
 
             <div className="w-full max-w-6xl mx-auto px-6 mt-12 text-center md:text-left text-[#FFFFFF] text-lg font-sans opacity-80">

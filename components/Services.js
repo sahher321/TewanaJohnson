@@ -9,7 +9,7 @@ const ServiceCard = ({ title, price, rating, reviews, image, badgeColor, delay, 
         href={redirectLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="block cursor-pointer"
+        className="block cursor-pointer group"
     >
         <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -28,7 +28,7 @@ const ServiceCard = ({ title, price, rating, reviews, image, badgeColor, delay, 
             </div>
 
             <div className="p-5">
-                <h3 className="text-xl font-medium text-[#19191C] mb-3">{title}</h3>
+                <h3 className="text-xl font-medium text-[#19191C] mb-3 group-hover:underline underline-offset-4">{title}</h3>
                 <div className="flex justify-between items-center text-sm">
                     <div className="flex items-center gap-1.5">
                         <Star size={22} className="fill-black text-black" />
@@ -66,14 +66,14 @@ export default function Services() {
             redirectLink: "https://www.fiverr.com/tewana_j/build-a-custom-fast-loading-seo-friendly-website?ref_ctx_id=d99520290f5a4b71b3874c874c9b30f7&pckg_id=1&source=seller_page",
 
         },
-        // {
-        //     title: "Logo Designing",
-        //     price: "15",
-        //     rating: "4.8",
-        //     reviews: "270",
-        //     badgeColor: "bg-[#FFB800]",
-        //     image: "/assets/logoDesign.svg",
-        // },
+        {
+            title: "Logo Designing",
+            price: "15",
+            rating: "4.8",
+            reviews: "270",
+            badgeColor: "bg-[#FFB800]",
+            image: "/assets/logoDesign.svg",
+        },
     ];
 
     return (
@@ -84,7 +84,7 @@ export default function Services() {
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="text-[#1DBF73] font-semibold tracking-[2px] text-base uppercase block mb-4"
+                        className="text-[#1DBF73] font-semibold tracking-[2px] text-base uppercase block "
                     >
                         POPULAR
                     </motion.span>
@@ -97,7 +97,7 @@ export default function Services() {
                     </motion.h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 justify-center">
                     {services.map((service, index) => (
                         <div key={index} className="w-full max-w-[400px] mx-auto">
                             <ServiceCard {...service} delay={index * 0.1} />
