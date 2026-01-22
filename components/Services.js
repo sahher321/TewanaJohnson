@@ -67,7 +67,7 @@ export default function Services() {
 
         },
         {
-            title: "Logo Design",
+            title: "Logo_Design",
             price: "15",
             rating: "4.8",
             reviews: "270",
