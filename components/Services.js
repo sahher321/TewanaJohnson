@@ -67,12 +67,12 @@ export default function Services() {
 
         },
         {
-            title: "Logo Designing",
+            title: "Logo Design",
             price: "15",
             rating: "4.8",
             reviews: "270",
             badgeColor: "bg-[#FFB800]",
-            image: "/assets/logoDesign.svg",
+            image: "/assets/heroImage1.gif",
         },
     ];
 
